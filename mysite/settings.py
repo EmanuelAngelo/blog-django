@@ -115,8 +115,14 @@ USE_L10N = True
 
 USE_TZ = True
 
-#send email
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# send email
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_SUBJECT_PREFIX = 'SUBJECT'
+EMAIL_HOST = 'smtp.office365.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'seu.email@outlook.com.br'
+EMAIL_HOST_PASSWORD = 'suaSenhaAqui'
 
 
 # Static files (CSS, JavaScript, Images)
